@@ -1,22 +1,25 @@
-#include "main.h"
+#ifndef MAIN_H
+#define MAIN_H
 
-/**
- * main - prints the word _putchar
- *
- * Return: 0 on success execution.
+/*
+ * File: main.h
+ * Auth: Yonas Leykun
+ * Desc: Header file containing declarations for all functions
+ *       used in the 0x02-functions_nested_loops directory.
  */
 
-int main(void)
-{
-	char s[] = "_putchar";
-	int i = 0;
+int _putchar(char);
+void print_alphabet(void);
+void print_alphabet_x10(void);
+int _islower(int c);
+int _isalpha(int c);
+int print_sign(int n);
+int _abs(int);
+int print_last_digit(int);
+void jack_bauer(void);
+void times_table(void);
+int add(int, int);
+void print_to_98(int n);
+void print_times_table(int n);
 
-	while (s[i] != '\0')
-	{
-		_putchar(s[i]);
-		i++;
-	}
-	_putchar(10);
-
-	return (0);
-}
+#endif
